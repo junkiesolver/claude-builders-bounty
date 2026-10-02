@@ -1,0 +1,5 @@
+{"event": "init", "by": "BJna6e6BRdQ6XALWhkYmKgn9egRrF4PYXW7QUH1ruTTQ", "ts": "2026-10-02T07:38:12Z"}
+{"event": "posted", "job": "1", "title": "Write a haiku about devnet", "bounty_lamports": 50000000, "ts": "2026-10-02T07:38:12Z"}
+{"event": "posted", "job": "2", "title": "Sketch the logo for v2", "bounty_lamports": 120000000, "ts": "2026-10-02T07:38:12Z"}
+{"event": "claimed", "job": "1", "agent": "AgentAlice1111111111111111111111111111111111", "lease_until": "2026-10-02T08:38:44Z", "ts": "2026-10-02T07:38:44Z"}
+{"event": "done", "job": "1", "agent": "AgentAlice1111111111111111111111111111111111", "result": "haiku: lamports fall like rain / a task claimed with one short lease / devnet pa", "ts": "2026-10-02T07:38:44Z"}
