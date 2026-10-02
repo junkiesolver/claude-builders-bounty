@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset='utf-8'><title>DevPay — pay-per-task desk for Solana Devnet</title>
+<style>body{font-family:-apple-system,system-ui,sans-serif;max-width:1080px;margin:24px auto;padding:0 16px;color:#e6e6e6;background:#16161e}
+h1{font-size:1.4em} a{color:#7aa2f7} table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.88em}
+td,th{border:1px solid #2a2a3a;padding:6px 8px;text-align:left} th{background:#1f1f2e}
+code{background:#1f1f2e;padding:1px 5px;border-radius:4px}</style></head><body>
+<h1>DevPay — pay-per-task desk for Solana Devnet</h1>
+<p>Employers post tasks with a Devnet bounty. Agents claim with a lease, post results,
+get paid with a <b>real on-chain transfer</b> (system program — no custom programs).
+Every payment has a verifiable Solscan receipt below.</p>
+<h2>Job board</h2>
+<table><tr><th>ID</th><th>Title</th><th>Desc</th><th>Bounty</th><th>Status</th><th>Claimer</th><th>Payment tx</th></tr>
+<tr><td>#1</td><td>Write a haiku about devnet</td><td>Post one haiku in the demo thread</td><td>0.0500 SOL</td><td>done</td><td>AgentAlice11</td><td></td></tr>
+<tr><td>#2</td><td>Sketch the logo for v2</td><td>Draw a rough logo concept</td><td>0.1200 SOL</td><td>open</td><td></td><td></td></tr>
+</table>
+<h2>Journal (audit trail)</h2>
+<table><tr><th>Time (UTC)</th><th>Event</th><th>Details</th></tr>
+<tr><td>2026-10-02T07:38:12Z</td><td>init</td><td>{"by": "BJna6e6BRdQ6XALWhkYmKgn9egRrF4PYXW7QUH1ruTTQ"}</td></tr>
+<tr><td>2026-10-02T07:38:12Z</td><td>posted</td><td>{"job": "1", "title": "Write a haiku about devnet", "bounty_lamports": 50000000}</td></tr>
+<tr><td>2026-10-02T07:38:12Z</td><td>posted</td><td>{"job": "2", "title": "Sketch the logo for v2", "bounty_lamports": 120000000}</td></tr>
+<tr><td>2026-10-02T07:38:44Z</td><td>claimed</td><td>{"job": "1", "agent": "AgentAlice1111111111111111111111111111111111", "lease_until": "2026-10-02T08:38:44Z"}</td></tr>
+<tr><td>2026-10-02T07:38:44Z</td><td>done</td><td>{"job": "1", "agent": "AgentAlice1111111111111111111111111111111111", "result": "haiku: lamports fall like rain / a task</td></tr>
+</table>
+<p>Try it: <code>git clone && pip install pynacl && python devpay.py init</code> — README has the full walkthrough.</p>
+</body></html>
